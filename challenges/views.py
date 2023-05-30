@@ -5,7 +5,6 @@ from django.http import HttpResponse, HttpResponseNotFound
 
 # drugi argument funkcji (month) musi miec dokladnie ta sama nazwe ktora zdefiniowalismy jako <identyfikator> w urls.py
 
-
 def monthly_challenge(request, month):
     challenge_text = None
     if month == "january":
