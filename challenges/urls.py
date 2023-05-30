@@ -1,8 +1,9 @@
 from django.urls import path
 from . import views
 
+
+# przechwytujemy dynamicznie url'a i przekazujemy go do funkcji monthly_challenge w views
+# w nawiasach ostrych osadzamy <identyfikator> ktory pozniej wykorzystamy w funkcji monthly_challenge
 urlpatterns = [
-    path("january", views.january),
-    path("february", views.february),
-    path("march", views.march)
+    path("<month>", views.monthly_challenge)
 ]
